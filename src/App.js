@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/scss/normalize.scss';
+import { BrowserRouter as Routes, Redirect, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import MyNFTs from './components/MyNFTs';
+import MyAccount from './components/MyAccount';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <Routes>
+            <Header />
+            <Switch>
+                <Route exact path="/" component={() => <MyNFTs />} />
+                <Route exact path="/my-account" component={() => <MyAccount />} />
+                <Route path="*" component={() => <Redirect to='/' />} />
+            </Switch>
+        </Routes>
+    );
 }
 
 export default App;
