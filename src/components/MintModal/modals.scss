@@ -1,0 +1,99 @@
+@import '../../assets/scss/variables';
+
+.mod-div{
+  position: absolute;
+  width: 60%;
+  height: 800px;
+  right: 0;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+.whole-modal{
+  z-index: 100;
+  width: 100%;
+  position: relative;
+  height: 800px;
+  background:rgba(0,0,0,0.1)
+  // opacity: 0.1;
+}
+.modal-close{
+  box-shadow: 0px 10px 20px 0px rgba(136, 120, 172, 0.2);
+  position: absolute;
+  top: 28px;
+  left: -3%;
+  border-radius: 50%;
+  background: #fff;
+  padding: 7px;
+}       
+.mintNft-div>h2{
+  position: relative;
+  margin-left: 100px;
+  margin-top: 80px;
+  font-family: $sharpGroteskSemiBoldFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  color: #000;
+  letter-spacing: 0.2px;
+
+}
+.mintNft-div>p{
+ 
+  padding: 0;
+  text-indent: 0;
+  position: relative;
+  font-size: 18px;
+  left: 100px;
+  margin-right: 45%;
+  top: 16px;
+  font-family: $spaceGroteskFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.ntfs{
+  margin-left: 100px;
+  width: 50%;
+  height: 60%;
+  margin-top: 8%;
+  bottom: 10.5%;
+  display: flex;
+}
+.ntfs > img{
+  cursor: pointer;
+  margin-left: 1%;
+  width: 48%;
+}
+.back-nft{
+  margin-left: 100px;
+  margin-top: 80px;
+  
+}
+.back-nft>span{
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: $sharpGroteskMediumFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+.mintNftCollection-div>h2{
+  margin-left: 100px;
+  margin-top: 20px; 
+  font-family: $sharpGroteskSemiBoldFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+.back-nft{
+  cursor: pointer;
+}
